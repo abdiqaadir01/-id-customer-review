@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide customer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Customer Review</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="./Review_Slider_Img/pic1.jpg" alt="" srcset="">
+                        <div>
+                            <h3>Nalwa</h3>
+                            <p>Webdesigner</p>
+                        </div>
+                    </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illum atque fugiat eligendi perferendis nesciunt molestiae impedit sed reprehenderit, nobis veritatis exercitationem<br> necessitatibus corrupti inventore quam! Tempora, fuga corporis?</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./Review_Slider_Img/pic4.jpg" alt="" srcset="">
+                        <div>
+                            <h3>Nalwa</h3>
+                            <p>Webdesigner</p>
+                        </div>
+                    </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illum atque fugiat eligendi perferendis nesciunt molestiae impedit sed reprehenderit, nobis veritatis exercitationem<br> necessitatibus corrupti inventore quam! Tempora, fuga corporis?</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./Review_Slider_Img/pic3.jpg" alt="" srcset="">
+                        <div>
+                            <h3>Nalwa</h3>
+                            <p>Webdesigner</p>
+                        </div>
+                    </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illum atque fugiat eligendi perferendis nesciunt molestiae impedit sed reprehenderit, nobis veritatis exercitationem<br> necessitatibus corrupti inventore quam! Tempora, fuga corporis?</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="./Review_Slider_Img/pic2.jpg" alt="" srcset="">
+                        <div>
+                            <h3>Nalwa</h3>
+                            <p>Webdesigner</p>
+                        </div>
+                    </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illum atque fugiat eligendi perferendis nesciunt molestiae impedit sed reprehenderit, nobis veritatis exercitationem<br> necessitatibus corrupti inventore quam! Tempora, fuga corporis?</p>
+                </div>
+            </div>
+            <div class="side-bar">
+         <img src="./Review_Slider_Img/up-arrow.png" id="uparrow">
+         <img src="./Review_Slider_Img/down-arrow.png" id="downup">
+            </div>
+        </div>
+    </div>
+    <script>
+        var slede =document.getElementById("slide");
+        var uparrow =document.getElementById("uparrow");
+        var downup =document.getElementById("downup");
+        let x=0;
+        uparrow.onclick= function(){
+            if (x>"-900") {
+               x=x-300;
+               slede.style.top =x+"px";
+            }
+        }
+        downup.onclick= function(){
+            if (x<0) {
+               x=x+300;
+               slede.style.top =x+"px";
+            }
+        }
+    </script>
+</body>
+</html>
